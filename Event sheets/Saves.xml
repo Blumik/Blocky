@@ -4,5 +4,77 @@
     <name>Saves</name>
     <events>
         <variable constant="0" name="Level_State" sid="996068605711154" static="0" type="number">0</variable>
+        <event-group description="" sid="792448326426629" title="Placek programingo">
+            <sub-events>
+                <event-block sid="709488017126389">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="427159744312551" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Check item exists" sid="140118399566682" type="LocalStorage">
+                            <param id="0" name="Key">&quot;saves&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="657099819946387">
+                    <conditions>
+                        <condition id="9" name="On item exists" sid="809401032550623" type="LocalStorage">
+                            <param id="0" name="Key">&quot;saves&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Get item" sid="726608520645218" type="LocalStorage">
+                            <param id="0" name="Key">&quot;saves&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="765201145947806">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="648437328926606" type="System">
+                                    <param id="0" name="Variable">Level_State</param>
+                                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="628793775768516">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="736305165098575" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="752577033637154">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Set item" sid="402877701492901" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;saves&quot;</param>
+                                    <param id="1" name="Value">Level_State</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="351021013996922">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="982126852634670" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="454250518507798">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Set text" sid="529858271893411" type="Saves">
+                                    <param id="0" name="Text">&quot;Saves: &quot; &amp; Level_State</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
