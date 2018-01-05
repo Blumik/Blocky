@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Menu_Scripts</name>
     <events>
-        <include>Saves</include>
         <variable constant="0" name="Select" sid="853712846637171" static="0" type="number">2</variable>
         <event-group description="" sid="513847219856758" title="Text Effects">
             <sub-events>
@@ -47,7 +46,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action disabled="1" id="3" name="Clear storage" sid="454876084705268" type="LocalStorage" />
+                                <action id="3" name="Clear storage" sid="454876084705268" type="LocalStorage" />
                                 <action id="-9" name="Set value" sid="179489399835045" type="System">
                                     <param id="0" name="Variable">Level_State</param>
                                     <param id="1" name="Value">0</param>
@@ -81,7 +80,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action disabled="1" id="1" name="Get item" sid="410285607277429" type="LocalStorage">
+                                <action id="1" name="Get item" sid="410285607277429" type="LocalStorage">
                                     <param id="0" name="Key">&quot;Level_State&quot;</param>
                                 </action>
                                 <action id="-25" name="Go to layout (by name)" sid="362292370414313" type="System">
@@ -281,7 +280,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block disabled="1" sid="294316036088827">
+        <event-block sid="294316036088827">
             <conditions>
                 <condition id="0" name="On key pressed" sid="212299767334431" type="Keyboard">
                     <param id="0" name="Key">77 (M)</param>
@@ -298,7 +297,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="964362604825827">
+        <event-block sid="964362604825827">
             <conditions>
                 <condition id="0" name="On key pressed" sid="481256436330440" type="Keyboard">
                     <param id="0" name="Key">66 (B)</param>
@@ -310,7 +309,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="452734406516406">
+        <event-block sid="452734406516406">
             <conditions>
                 <condition id="0" name="On key pressed" sid="333173711011040" type="Keyboard">
                     <param id="0" name="Key">78 (N)</param>
