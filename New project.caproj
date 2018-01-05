@@ -217,8 +217,8 @@
     <layout-folder>
         <layout>Menu.xml</layout>
         <layout>Level 1.xml</layout>
-        <layout>Lvl 1.xml</layout>
-        <layout>Lvl 2.xml</layout>
+        <layout>Lvl_1.xml</layout>
+        <layout>Lvl_2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Menu_Scripts.xml</event-sheet>

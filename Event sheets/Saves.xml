@@ -74,6 +74,24 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="548835932131999">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="422637253844338" type="Keyboard">
+                            <param id="0" name="Key">9 (Tab)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="110357061642492">
+                            <conditions />
+                            <actions>
+                                <action id="-25" name="Go to layout (by name)" sid="267756289254706" type="System">
+                                    <param id="0" name="Layout">&quot;Lvl_&quot; &amp; Level_State</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
     </events>
