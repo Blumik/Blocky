@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Player_Scripts</name>
+    <events>
+        <event-group description="" sid="923000168147116" title="Particles">
+            <sub-events>
+                <event-block sid="120902470579577">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="825753571291315" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="233939330130863" type="Particles">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="931484448223447">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="721439839344767" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set spray cone" sid="240606699828471" type="Particles">
+                            <param id="0" name="Spray cone">360</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="396346017849232" title="Functions">
+            <sub-events>
+                <event-block sid="384435185751395">
+                    <conditions>
+                        <condition id="0" name="On function" sid="573381379946269" type="Function">
+                            <param id="0" name="Name">&quot;Left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="460863607714895" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="436246649469184" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="184967435507028" type="Particles">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="2" name="Set spray cone" sid="675586622633672" type="Particles">
+                            <param id="0" name="Spray cone">80</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="425015988632573">
+                    <conditions>
+                        <condition id="0" name="On function" sid="793178559241355" type="Function">
+                            <param id="0" name="Name">&quot;Right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="647882441888301" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="723360861621523" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="599735311746289" type="Particles">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action id="2" name="Set spray cone" sid="204979775966379" type="Particles">
+                            <param id="0" name="Spray cone">80</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="687524208788740">
+                    <conditions>
+                        <condition id="0" name="On function" sid="261746823297867" type="Function">
+                            <param id="0" name="Name">&quot;Jump&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="703950761954455" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="758695811311257" title="Keyboard | Gamepad">
+            <sub-events>
+                <event-block sid="977394896724975">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="237784127857410" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="292797730500326" type="Function">
+                            <param id="0" name="Name">&quot;Left&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="121549066696901">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="437190764320583" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="352140956457217" type="Function">
+                            <param id="0" name="Name">&quot;Right&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="213099608390314">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="536804165831637" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="849374887584596" type="Function">
+                            <param id="0" name="Name">&quot;Jump&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="967295203838923">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="635573912832833" type="Keyboard">
+                            <param id="0" name="Key">84 (T)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="966960559828256">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="576079868326821" type="Player">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="133984403327949" type="Player">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="321432330726813" type="Particles">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="-32" name="Set layer effect parameter" sid="416700508531359" type="System">
+                                    <param id="0" name="Layer">&quot;Tiles&quot;</param>
+                                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                                    <param id="2" name="Parameter index">0</param>
+                                    <param id="3" name="Value">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="184087994926457">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="966739729562859" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="322509898601735" type="Player">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="628386389608359" type="Particles">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="-32" name="Set layer effect parameter" sid="362549667498791" type="System">
+                                    <param id="0" name="Layer">&quot;Tiles&quot;</param>
+                                    <param id="1" name="Effect">&quot;Brightness&quot;</param>
+                                    <param id="2" name="Parameter index">0</param>
+                                    <param id="3" name="Value">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

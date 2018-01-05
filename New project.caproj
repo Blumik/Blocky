@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1rceufup8e5uc</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="brightness">Brightness</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">High quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Percentage text</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Functions">
+            <object-type name="Function" sid="466967929511621">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="Gamepad" sid="862845066776878">
+                <plugin id="gamepad" />
+            </object-type>
+            <object-type name="Keyboard" sid="391214282505465">
+                <plugin id="Keyboard" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Menu_Obj">
+            <object-type name="Continue_Bt" sid="109776192091025">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="395252933892697" speed="5">
+                        <frame duration="1" hotspotX="0.505263" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Select" pingpong="0" repeatcount="1" repeatto="0" sid="703614061473262" speed="5">
+                        <frame duration="1" hotspotX="0.505263" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Credits_Bt" sid="187400508161946">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="172705762040401" speed="5">
+                        <frame duration="1" hotspotX="0.5125" hotspotY="0.52" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Select" pingpong="0" repeatcount="1" repeatto="0" sid="858498587269954" speed="5">
+                        <frame duration="1" hotspotX="0.506173" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Menu_Text_Bg" sid="501415391288560">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="968949218446672" speed="5">
+                        <frame duration="1" hotspotX="0.502994" hotspotY="0.509091" original-source="C:\Users\Dawid\Desktop\Menu_Text_Bg.png">
+                            <collision-poly>
+                                <point x="0.011976" y="0.0363636" />
+                                <point x="0.497006" y="0.345455" />
+                                <point x="0.868263" y="0.4" />
+                                <point x="0.976048" y="0.490909" />
+                                <point x="0.928144" y="0.781818" />
+                                <point x="0.497006" y="0.636364" />
+                                <point x="0.0898204" y="0.727273" />
+                                <point x="0.00598802" y="0.490909" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Menu_Bg" sid="501508742350212">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576848552091378" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="New" sid="781489230115399">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706961112232844" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="New_Game_Bt" sid="569169297311290">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="979356109883121" speed="5">
+                        <frame duration="1" hotspotX="0.504854" hotspotY="0.52" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Select" pingpong="0" repeatcount="1" repeatto="0" sid="460650911234011" speed="5">
+                        <frame duration="1" hotspotX="0.504854" hotspotY="0.52" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Quit_Bt" sid="721392186054000">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="859901094335035" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Select" pingpong="0" repeatcount="1" repeatto="0" sid="873940065255990" speed="5">
+                        <frame duration="1" hotspotX="0.511111" hotspotY="0.481481" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite" sid="544993139639746">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235845121692032" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite3" sid="126550953325390">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878870240785078" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite2" sid="691327311102006">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="386556532662385" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text_Particles" sid="446170545788926">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-type name="Tilemap" sid="800749021875121">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="933033758340536">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="Player" sid="595074182555943">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="529690877503704">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="464868491782313" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Particles" x="0.5" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="853249327565758">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="LocalStorage" sid="236768899372248">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="NWjs" sid="394555637654786">
+            <plugin id="NodeWebkit" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Level 1.xml</layout>
+        <layout>Lvl 1.xml</layout>
+        <layout>Lvl 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Menu_Scripts.xml</event-sheet>
+        <event-sheet>Main_Game_Scripts.xml</event-sheet>
+        <event-sheet>Player_Scripts.xml</event-sheet>
+        <event-sheet>Saves.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Function" uid="6" />
+        <global-instance type="Keyboard" uid="7" />
+        <global-instance type="Gamepad" uid="16">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="LocalStorage" uid="17" />
+        <global-instance type="NWjs" uid="18" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
